@@ -1,0 +1,20 @@
+ <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: 'AIzaSyBTDPv4m6LyPDwYV8tCj5YJU94Kh4Cg-04',
+        authDomain: 'net-ninja-c96ec.firebaseapp.com',
+        databaseURL: 'https://net-ninja-c96ec-default-rtdb.firebaseio.com',
+        projectId: 'net-ninja-c96ec',
+        storageBucket: 'net-ninja-c96ec.appspot.com',
+        messagingSenderId: '510043525940',
+        appId: '1:510043525940:web:98e353eb5b79b6a4dbcb61',
+        measurementId: 'G-TTVC6EYZ96',
+      }
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+      firebase.analytics()
+      const db = firebase.firestore();
+      const settings = { timestampsInSnapshots: true};
+      db.settings(settings)
+    </script>
